@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Scope("prototype")
+	//This is a practice project
 public class Employee {
 	private int Empid;
 	private String EmpName;
