@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Grid</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Grid</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Emp ID</th>
+                <th>Emp Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Iterate over the employees list -->
+            <tr th:each="employee : ${employees}">
+                <td th:text="${employee.getEmpid}"></td>
+                <td th:text="${employee.getEmpName}"></td>
+                <td th:text="${employee.getAge}"></td>
+                <td th:text="${employee.getSalary}"></td>
+                <td th:text="${employee.getCountry}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
