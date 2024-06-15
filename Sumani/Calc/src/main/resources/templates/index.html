@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="/index" method="post">
+        <label for="num1">Input:     </label>
+        <input type="text" id="num1" name="num1" required placeholder="enter first value ">
+		<label for="num2"></label>
+		<input type="text" id="num2" name="num2" required placeholder="enter second value"><br><br><br>
+		<label for="operation">Operation :     </label>
+		<select id="operation" name="operation">
+		            <option value="add">Add</option>
+		            <option value="subtract">Subtract</option>
+		            <option value="multiply">Multiply</option>
+		            <option value="divide">Divide</option>
+		        </select><br><br><br>
+      
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
