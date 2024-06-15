@@ -1,4 +1,4 @@
-package com.kishore;
+package com.cbl;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
