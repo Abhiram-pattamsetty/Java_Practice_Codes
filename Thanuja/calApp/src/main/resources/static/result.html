@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Calculation Result</title>
+</head>
+<body>
+<h1>Calculation Result</h1>
+<p>Result: <span id="result"></span></p>
+<a href="/">Back to Calculator</a>
+<script>
+  // Retrieve the result from the URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const result = urlParams.get('result');
+  document.getElementById('result').textContent = result;
+</script>
+</body>
+</html>

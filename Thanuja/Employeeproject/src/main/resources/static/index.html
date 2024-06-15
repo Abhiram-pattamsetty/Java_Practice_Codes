@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employee Form</title>
+</head>
+<body>
+    <h2>Employee Details Form</h2>
+    <form action="/upl" method="post">
+        <div>
+            <label for="empid">Empid:</label>
+            <input type="text" id="empid" name="empid" required>
+        </div>
+        <div>
+            <label for="empname">EmpName:</label>
+            <input type="text" id="empname" name="empname" required>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div>
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" name="salary" required>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
