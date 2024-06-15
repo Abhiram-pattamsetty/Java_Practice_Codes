@@ -1,0 +1,14 @@
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> Result Page</title>
+</head>
+<body>
+    <h1>Result Page</h1>
+	<p th:if="${evm < 15}" th:text="'Result: ' + ${result}"></p>
+	    <p th:if="${evm > 15}" th:text="${akki}"> Invalid operation for the call</p>
+    <a href="/">Back to Calculator</a>
+</body>
+</html>
